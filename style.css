@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: lightgray;
+  background-image: url(./img/301407.jpg) ;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -18,26 +18,30 @@ body {
 
 .titulo {
   padding: 15px;
-  width: 30vw;
+  width: auto;
   margin: auto;
+  color: whitesmoke;
+  text-align: center;
 
 }
 
 .box {
   padding: 10px;
-  margin: 0 10px 0 10px;
+  margin: 20px 10px 0 10px;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-  background-color: white;
+  background-color: rgb(211, 211, 211);
   border-radius: 0.5em;
-  width: 30vw;
+  width: 60vw;
+  min-height: 20vw;
   height: auto;
+  
 }
 
 .btn {
   border: 0;
   color: white;
   font-weight: bold;
-  background-color: blue;
+  background-color: rgb(57, 57, 196);
   padding: 10px;
   margin-top: 10px;
   border-radius: 0.5em;
@@ -49,11 +53,19 @@ body {
   display: block;
   padding: 0.5em;
   width: 100%;
-  height: 50px;
+  height: 100px;
+  font-size: 15px;
+}
+
+.text-input::placeholder{
+  font-size: 15px;
+  text-align: start;
+  line-height: 100%;
+  color: rgb(211, 211, 211);
 }
 
 .footer div {
-  background-color: antiquewhite;
+  background-color: rgb(211, 211, 211);
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -70,3 +82,14 @@ body {
   text-decoration: none;
   color: rgb(243, 57, 57);
 }
+
+@media (max-width: 1199.98px) { 
+  .main {
+    flex-wrap: wrap;
+    width: 100vw;
+  }
+  .box {
+    margin-top: 60px;
+    width: 90vw;
+  }
+ }
