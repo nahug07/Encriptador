@@ -16,11 +16,11 @@ botonE.addEventListener("click", clickE);
 
 function clickE() {
   var cadena = document.getElementById("texto").value;
-  cadena = cadena.replace("e", "enter");
-  cadena = cadena.replace("i", "imes");
-  cadena = cadena.replace("a", "ai");
-  cadena = cadena.replace("o", "ober");
-  cadena = cadena.replace("u", "ufat");
+  cadena = cadena.replaceAll("e", "enter");
+  cadena = cadena.replaceAll("i", "imes");
+  cadena = cadena.replaceAll("a", "ai");
+  cadena = cadena.replaceAll("o", "ober");
+  cadena = cadena.replaceAll("u", "ufat");
   document.getElementById("msg").value = cadena;
 }
 
