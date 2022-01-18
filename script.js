@@ -22,6 +22,7 @@ function clickE() {
   cadena = cadena.replaceAll("o", "ober");
   cadena = cadena.replaceAll("u", "ufat");
   document.getElementById("msg").value = cadena;
+  document.getElementById("texto").value = "";
 }
 
 /* Reglas de desencriptación: 
@@ -57,3 +58,5 @@ function copy() {
 }
 
 document.querySelector("#copy").addEventListener("click", copy);
+
+
