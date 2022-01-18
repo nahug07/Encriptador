@@ -6,23 +6,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Encriptación</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1 class="titulo">Encriptación de mensajes</h1>
+  <h1 class="titulo"> Encriptación de mensajes </h1>
 
   <main class="main">
     <section class="form box">
       <h2 id="">Entrada de Mensaje</h2>
-      <form action="">
+      <form action="" onsubmit="return false" autocomplete="off">
         <br>
-        <input class="text-input" type="text" name="input-texto" id="input-texto" placeholder="Ingrese el texto aqui">
+        <input class="text-input" type="text" name="input-texto" id="texto" placeholder="Ingrese el texto aqui">
         <br>
         <label for="input-texto">(Solo letras minúsculas, sin acento)</label>
         <br>
         <br>
-        <input class="btn" type="submit" value="Encriptar" id="btn-encriptar">
-        <input class="btn" type="submit" value="Desencriptar" id="btn-desencriptar">
+        <input class="btn" type="submit" value="Encriptar" id="botonE">
+        <input class="btn" type="submit" value="Desencriptar" id="botonD">
       </form>
     </section>
   
@@ -30,7 +30,7 @@
       <h2 id="">Salida de Mensaje</h2>
       <br>
       <input class="text-input" type="text" id="msg"></input>
-      <input class="btn" type="submit" value="Copiar" id="btn-copy">
+      <input class="btn" type="submit" value="Copiar" id="copy">
     </section>
    
   </main>
