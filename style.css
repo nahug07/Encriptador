@@ -5,8 +5,8 @@
 }
 
 body {
-  background-image: url(./img/301407.jpg) ;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-image: url(./img/301407.jpg);
+  font-family: "Mochiy Pop P One", sans-serif;
 }
 
 .main {
@@ -24,11 +24,10 @@ body {
   margin: auto;
   color: rgb(31, 27, 27);
   text-align: center;
-
 }
 
 h2 {
-  background-color: rgba(205, 134, 63, 0.562);
+  background-color: rgba(139, 139, 139, 0.863);
   text-align: center;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0.5em;
@@ -44,22 +43,23 @@ h2 {
   width: 60vw;
   min-height: 20vw;
   height: auto;
-  
 }
 
 .btn {
+  font-family: "Mochiy Pop P One", sans-serif;
   border: 0;
   color: white;
   font-weight: bold;
-  background-color: rgba(57, 57, 196, 0.829);
+  background-color: rgba(14, 82, 54, 0.829);
   padding: 10px;
   margin-top: 10px;
   border-radius: 0.5em;
 }
 
-.btn:hover  {
-  background-color: rgb(34, 34, 121);
+.btn:hover {
+  background-color: rgba(9, 49, 32, 0.829);
   cursor: pointer;
+  transition: all 0.5s;
 }
 
 .text-input {
@@ -72,11 +72,12 @@ h2 {
   font-size: 15px;
 }
 
-.text-input::placeholder{
+.text-input::placeholder {
   font-size: 15px;
   text-align: start;
   line-height: 100%;
   color: rgb(211, 211, 211);
+  font-family: "Mochiy Pop P One", sans-serif;
 }
 
 .footer div {
@@ -93,18 +94,46 @@ h2 {
   line-height: 40px;
 }
 
-.footer div p  a{ 
+.footer div p a {
   text-decoration: none;
-  color: rgb(243, 57, 57);
+  color: rgb(212, 50, 50);
 }
 
-@media (max-width: 1199.98px) { 
+.footer div p a:hover {
+  color: rgb(224, 152, 88);
+  transition: all 0.5s;
+  transform: scale(2);
+}
+
+@media (max-width: 1199.98px) {
   .main {
     flex-wrap: wrap;
     width: 100vw;
   }
   .box {
-    margin-top: 40px;
+    margin-top: 20px;
     width: 90vw;
   }
- }
+
+  .text-input {
+    height: 75px;
+    font-size: 15px;
+  }
+
+  .footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+  }
+}
+
+@media (max-height: 738px) {
+  .box {
+    margin-top: 5px;
+    width: 90vw;
+  }
+
+  .main {
+    padding-top: 5px;
+  }
+}
