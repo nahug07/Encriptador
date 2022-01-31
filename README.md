@@ -41,3 +41,5 @@ Por fin, en la columna Concluido estarán los elementos ya concluidos.
 El Trello es una herramienta de uso individual para que puedas controlar el progreso de tus actividades, pero no será evaluada.
 
 Buen proyecto!
+
+Deploy ----> https://encriptador.vercel.app/
